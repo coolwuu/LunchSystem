@@ -1,5 +1,7 @@
 ﻿using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
+using LunchSystem.App_Start;
 
 namespace LunchSystem
 {
@@ -9,6 +11,7 @@ namespace LunchSystem
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
